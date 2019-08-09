@@ -135,4 +135,9 @@ const [{ prop: x9 }] = arr;
 console.log(x9);
 const [{ prop: x10 } = defaultValue] = arr;
 const [{ prop: x11 } = { prop: 123 }] = [];
-console.log(prop, x9, x10, x11); // 123, 123, 123, 123
+const [{ prop: x13 = 1 } = { prop: 123 }] = [];
+console.log(prop, x9, x10, x11, x13); // 123, 123, 123, 123
+
+//19.
+const [{ prop: x12 = 123 } = { prop: 124 }] = [{ prop: 586 }];
+console.log(prop, x12); //123, 586
