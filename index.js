@@ -65,5 +65,9 @@ console.log(x5, y5); // 3, 5
 const [x6 = 3, y6 = x6] = [7];
 console.log(x6, y6); // 7, 7
 const [x7 = 3, y7 = x7] = [7, 2];
-console.log(x7, y7);
-7, 2;
+console.log(x7, y7); //7, 2;
+
+//14. Nesting arrays destructuring
+const numbers = [8, [1, 2, 3], 10, 12];
+const [a, [d, e, f2]] = numbers;
+console.log(a, d, e, f2); // 8,1,2,3
