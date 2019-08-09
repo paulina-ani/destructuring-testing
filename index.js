@@ -54,3 +54,7 @@ console.log(red2, green2, blue2); //200, undefined, 255
 const rgb3 = [200];
 const [green3, red3 = 255, blue3 = 255] = rgb3;
 console.log(green3, red3, blue3); //200, 255, 255
+
+//12. Elision/Omit value
+const [, , x4, y4] = ["a", "b", "c", "d"];
+console.log(x4, y4); // c,d
