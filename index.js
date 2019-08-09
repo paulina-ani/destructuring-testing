@@ -124,3 +124,15 @@ const {
   }
 } = person;
 console.log(nextName, country, city, lat, lon); // "John Doe","Canada","Vancouver",49.2827, -123.1207
+
+//18. Advanced example
+const [x8 = 1] = [];
+console.log(x8); //1
+const arr = [{ prop: 123 }];
+const [{ prop }] = arr;
+console.log(prop); //123
+const [{ prop: x9 }] = arr;
+console.log(x9);
+const [{ prop: x10 } = defaultValue] = arr;
+const [{ prop: x11 } = { prop: 123 }] = [];
+console.log(prop, x9, x10, x11); // 123, 123, 123, 123
