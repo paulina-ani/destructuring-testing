@@ -25,3 +25,8 @@ const { length: len } = "abc";
 console.log(len); // 3
 const { toString: s } = 123; // s = Number.prototype.toString
 console.log(s);
+
+//6. computed property key
+const FOO = "foo";
+const { [FOO]: ff } = { foo: 123 };
+console.log(ff);
