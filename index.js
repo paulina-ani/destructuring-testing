@@ -86,3 +86,20 @@ const {
   scores: { maths, science = 50 }
 } = student;
 console.log(name, maths, science); //"John Doe",74, 50
+
+//16. Nesting complex values
+const obj2 = {
+  a: [
+    {
+      foo: 123,
+      bar: "abc"
+    },
+    {}
+  ],
+  b: true
+};
+
+const {
+  a: [{ foo: f3 }]
+} = obj2;
+console.log(f3); // 123
