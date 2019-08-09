@@ -29,4 +29,9 @@ console.log(s);
 //6. computed property key
 const FOO = "foo";
 const { [FOO]: ff } = { foo: 123 };
-console.log(ff);
+console.log(ff); //123
+
+// Array destructuring
+const table = ["a", "b"];
+const [x2, y2] = table;
+console.log(x2, y2);
