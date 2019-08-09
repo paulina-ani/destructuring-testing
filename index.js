@@ -19,3 +19,9 @@ console.log("");
 //4. Default value and rename
 const { foo: x = 3, bar: y } = {};
 console.log(x, y); //3, undefined
+
+//5. Primitive values
+const { length: len } = "abc";
+console.log(len); // 3
+const { toString: s } = 123; // s = Number.prototype.toString
+console.log(s);
