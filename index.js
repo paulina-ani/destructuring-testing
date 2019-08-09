@@ -44,3 +44,8 @@ console.log(red, green, blue); //255, 200, 0
 //9. Default
 const [x3 = 3, y3] = [];
 console.log(x3, y3); // 3, undefined
+
+//10.
+const rgb2 = [200];
+const [red2 = 255, green2, blue2 = 255] = rgb2;
+console.log(red2, green2, blue2); //200, undefined, 255
