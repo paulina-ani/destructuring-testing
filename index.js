@@ -103,3 +103,24 @@ const {
   a: [{ foo: f3 }]
 } = obj2;
 console.log(f3); // 123
+
+// 17. Nesting complex values other example
+const person = {
+  fullName: "John Doe",
+  age: 25,
+  location: {
+    country: "Canada",
+    city: "Vancouver",
+    coordinates: [49.2827, -123.1207]
+  }
+};
+//5 variables: name, country, city, lat, lon
+const {
+  fullName: nextName,
+  location: {
+    country,
+    city,
+    coordinates: [lat, lon]
+  }
+} = person;
+console.log(nextName, country, city, lat, lon); // "John Doe","Canada","Vancouver",49.2827, -123.1207
