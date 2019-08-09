@@ -49,3 +49,8 @@ console.log(x3, y3); // 3, undefined
 const rgb2 = [200];
 const [red2 = 255, green2, blue2 = 255] = rgb2;
 console.log(red2, green2, blue2); //200, undefined, 255
+
+//11.
+const rgb3 = [200];
+const [green3, red3 = 255, blue3 = 255] = rgb3;
+console.log(green3, red3, blue3); //200, 255, 255
