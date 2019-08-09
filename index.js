@@ -31,7 +31,12 @@ const FOO = "foo";
 const { [FOO]: ff } = { foo: 123 };
 console.log(ff); //123
 
-// Array destructuring
+//7. Array destructuring
 const table = ["a", "b"];
 const [x2, y2] = table;
 console.log(x2, y2);
+
+//8.
+const rgb = [255, 200, 0];
+const [red, green, blue] = rgb;
+console.log(red, green, blue); //255, 200, 0
