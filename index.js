@@ -71,3 +71,18 @@ console.log(x7, y7); //7, 2;
 const numbers = [8, [1, 2, 3], 10, 12];
 const [a, [d, e, f2]] = numbers;
 console.log(a, d, e, f2); // 8,1,2,3
+
+//15. Nesting object destructuring
+const student = {
+  name: "John Doe",
+  age: 16,
+  scores: {
+    maths: 74,
+    english: 63
+  }
+};
+const {
+  name,
+  scores: { maths, science = 50 }
+} = student;
+console.log(name, maths, science); //"John Doe",74, 50
