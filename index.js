@@ -58,3 +58,12 @@ console.log(green3, red3, blue3); //200, 255, 255
 //12. Elision/Omit value
 const [, , x4, y4] = ["a", "b", "c", "d"];
 console.log(x4, y4); // c,d
+
+//13. Refering to other variables
+const [x5 = 3, y5 = x5] = [, 5];
+console.log(x5, y5); // 3, 5
+const [x6 = 3, y6 = x6] = [7];
+console.log(x6, y6); // 7, 7
+const [x7 = 3, y7 = x7] = [7, 2];
+console.log(x7, y7);
+7, 2;
